@@ -135,7 +135,7 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-@media screen and (min-width:1024px){
+@media screen and (max-width:1024px){
     .info_container h1 {
         font-size: 2.2rem;
         line-height: 3rem;
@@ -144,7 +144,7 @@ body {
         font-size: 0.9rem;
     }
 }
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
     .main_container {
         width: 85%;
     }
@@ -155,8 +155,11 @@ body {
     .info_container p {
         font-size: 0.8rem;
     }
+    .form_container {
+        padding: 30px;
+    }
 }
-@media screen and (min-width:425px){
+@media screen and (max-width:520px){
     .main_container {
         flex-direction: column;
         margin: 5.938rem auto;
