@@ -17,18 +17,32 @@
     </section>
     <section class="register_container">
       <article class="cost_mouth">
-        <p>Try it free 7 days then $20/mo. thereafter</p>
+        <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
       </article>
-      <section class="form_container">
-        <form action="">
-          <input type="text" class="input_item" placeholder="First Name">
-          <input type="text" class="input_item" placeholder="Last Name">
-          <input type="email" class="input_item" placeholder="Email Address">
-          <input type="password" class="input_item" placeholder="Password">
-          <input type="submit" class="btn_claim" value="Claim your free trial">
-        </form>
-        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-      </section>
+      <form action="#" class="form_container">
+        <div class="input_item">
+          <input type="text" class="input" id="input_first" placeholder="First Name">
+          <div class="error"></div>
+          <p class="msg_error">First Name cannot be empty</p>
+        </div>
+        <div class="input_item">
+          <input type="text" class="input"id="input_last" placeholder="Last Name">
+          <div class="error"></div>
+          <p class="msg_error">Last Name cannot be empty</p>
+        </div>
+        <div class="input_item">
+          <input type="email" class="input" placeholder="Email Address">
+          <div class="error"></div>
+          <p class="msg_error">Looks like this not an email</p>
+        </div>
+        <div class="input_item">
+          <input type="password" class="input" placeholder="Password">
+          <div class="error"></div>
+          <p class="msg_error">Password cannot be empty</p>
+        </div>
+        <input type="submit" class="btn_claim" value="Claim your free trial">
+        <label>By clicking the button, you are agreeing to our <span>Terms and Services</span></label>
+      </form>
     </section>
   </main>
   <footer>
