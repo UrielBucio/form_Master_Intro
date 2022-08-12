@@ -44,6 +44,7 @@ body {
     color: hsla(0, 28%, 95%, 0.89);
     font-weight: 500;
 }
+/* Register container */ 
 .register_container {
     padding-left: 15px;
     width: 50%;
@@ -133,4 +134,61 @@ body {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+@media screen and (min-width:1024px){
+    .info_container h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .info_container p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width:768px){
+    .main_container {
+        width: 85%;
+    }
+    .info_container h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .info_container p {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width:425px){
+    .main_container {
+        flex-direction: column;
+        margin: 5.938rem auto;
+        text-align: center;
+        width: 85%;
+    }
+    .info_container, .register_container  {
+        padding: 0;
+        width: 100%;
+    }
+    .info_container h1 {
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+    }
+    .info_container p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-bottom: 4.063rem;
+    }
+    .cost_mouth {
+        text-align: center;
+        padding: 18px 5px;
+    }
+    .cost_mouth p {
+        font-size: 1rem;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .form_container {
+        padding: 25px;
+    }
+    .btn_claim {
+        margin-bottom: 15px;
+    }
 }
