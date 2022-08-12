@@ -66,6 +66,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px 5px 0px rgba(0,0,0,0.2);
     padding: 40px;
+    text-align: center;
     width: 100%;
 }
 .input_item {
@@ -84,6 +85,7 @@ body {
     background-image: url(../src/img/icon-error.svg);
     background-repeat: no-repeat;
     background-position: center;
+    display: none;
     height: 40px;
     position: absolute;
     right: 4%;
@@ -92,9 +94,10 @@ body {
 }
 .msg_error {
     color: var(--red);
+    display: none;
     font-size: 0.7rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     text-align: right;
     width: 100%;
 }
@@ -114,7 +117,6 @@ body {
 .form_container label {
     color: var(--grayishBlue);
     font-size: 0.7rem;
-    text-align: center;
 }
 .form_container label span {
     color: var(--red);
