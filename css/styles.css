@@ -8,9 +8,117 @@
     --darkBlue: hsl(249, 10%, 26%); 
     --grayishBlue: hsl(246, 25%, 77%);
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
+    background-color: var(--red);
+    background-image: url(../src/img/bg-intro-desktop.png); 
+    background-position: top;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    min-height: 100vh;
+}
+.main_container {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 75px auto;
+    min-height: 650px;
+    justify-content: center;
+    width: 77.0835%;
+}
+.info_container {
+    color: white;
+    width: 50%;
+}
+.info_container h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 25px;
+}
+.info_container p {
+    color: hsla(0, 28%, 95%, 0.89);
+    font-weight: 500;
+}
+.register_container {
+    padding-left: 15px;
+    width: 50%;
+}
+.cost_mouth {
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 10px 5px 0px rgba(0,0,0,0.5);
+    color: white;
+    font-weight: 600;
+    margin: 0 auto 30px;
+    padding: 18px;
+    text-align: center;
+}
+.cost_mouth p span {
+    font-weight: 400;
+}
+.form_container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 5px 0px rgba(0,0,0,0.2);
+    padding: 40px;
+    width: 100%;
+}
+.input_item {
+    position: relative;
+}
+.input, .btn_claim{
+    border: 1px solid var(--grayishBlue);
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 18px;
+    position: relative;
+    width: 100%;
+}
+.error {
+    background-image: url(../src/img/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    position: absolute;
+    right: 4%;
+    top: 6%;
+    width: 40px;
+}
+.msg_error {
+    color: var(--red);
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: right;
+    width: 100%;
+}
+.input_item:focus {
+    border: 1px solid var(--darkBlue);
+    font-weight: 700;
+    outline: none;
+}
+.btn_claim {
+    background-color: var(--green);
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.form_container label {
+    color: var(--grayishBlue);
+    font-size: 0.7rem;
+    text-align: center;
+}
+.form_container label span {
+    color: var(--red);
+    font-weight: 700;
 }
 .attribution { 
     font-size: 11px; 
